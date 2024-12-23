@@ -1,39 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Shortly logo">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <img src="./images/icon-menu.svg" alt="icon menu" aria-hidden="true">
+        </button>
+        <ul class="main-nav">
+          <li>
+            <div>
+              <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Features</button>
+              <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+            </div>
+            <ul class="dropdown">
+              <li><a href="#"><img src="./images/icon-todo.svg" alt="" aria-hidden="true"><span>Todo List</span></a>
+              </li>
+              <li><a href="#"><img src="./images/icon-calendar.svg" alt="" aria-hidden="true"><span>Calendar</span></a>
+              </li>
+              <li><a href="#"><img src="./images/icon-reminders.svg" alt=""
+                    aria-hidden="true"><span>Reminders</span></a>
+              </li>
+              <li><a href="#"><img src="./images/icon-planning.svg" alt="" aria-hidden="true"><span>Planning</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Company</button>
+              <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+            </div>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <ul class="dropdown">
+              <li><a href="#"><span>History</span></a></li>
+              <li><a href="#"><span>Our Team</span></a></li>
+              <li><a href="#"><span>Blog</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="auth-nav">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <picture>
+          <source media="(max-width: 1023px)" srcset="./images/image-hero-mobile.png">
+          <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png">
+          <img src="./images/image-hero-mobile.png" alt=" illustration of image hero">
+        </picture>
+      </div>
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <a href="./index.html">Learn more</a>
+    </section>
+    <footer>
+      <ul>
+        <li><img src="./images/client-databiz.svg" alt="client databiz image"></li>
+        <li><img src="./images/client-audiophile.svg" alt="client audiophile image"></li>
+        <li><img src="./images/client-meet.svg" alt="client meet image"></li>
+        <li><img src="./images/client-maker.svg" alt="client maker image"></li>
+      </ul>
+    </footer>
+  </main>
+  <script src="./src/index.js"></script>
 </body>
+
 </html>

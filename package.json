@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<!-- # Frontend Mentor - Intro section with dropdown navigation solution",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

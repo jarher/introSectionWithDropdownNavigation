@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <main class="relative">
+    <header class="container">
+      <nav class="flex justify-between items-center py-6 px-5 font-color-medium-gray text-sm">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Shortly logo">
+        </div>
+        <div>
+          <button class="w-4 h-4 overflow-hidden relative text-transparent" aria-label="Toggle navigation">
+            menu toggle
+            <img id="menu-toggle" class="absolute top-0" src="./images/icon-menu.svg" alt="icon menu"
+              aria-hidden="true">
+          </button>
+          <div id="menu-container" class="flex-row-reverse fixed top-0 left-0 bottom-0 right-0 hidden">
+            <div id="menu-content" class="w-60 h-screen background-almost-white p-5 flex flex-col">
+              <button class="w-4 h-4 relative text-transparent self-end">
+                close menu
+                <img id="close-menu" class="absolute top-0" src="./images/icon-close-menu.svg" alt="close menu icon">
+              </button>
+              <ul class="mt-5">
+                <li class="relative">
+                  <div class="flex items-center gap-4">
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Features</button>
+                    <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+                  </div>
+                  <ul class="flex flex-col gap-2 pl-5 mt-4">
+                    <li><a class="flex  gap-4" href="./index.html"><img class="w-3 h-3" src="./images/icon-todo.svg"
+                          alt="" aria-hidden="true"><span>Todo
+                          List</span></a>
+                    </li>
+                    <li><a class="flex  gap-4" href="./index.html"><img class="w-3 h-3" src="./images/icon-calendar.svg"
+                          alt="" aria-hidden="true"><span>Calendar</span></a>
+                    </li>
+                    <li><a class="flex  gap-4" href="./index.html"><img class="w-3 h-3"
+                          src="./images/icon-reminders.svg" alt="" aria-hidden="true"><span>Reminders</span></a>
+                    </li>
+                    <li><a class="flex  gap-4" href="./index.html"><img class="w-3 h-3" src="./images/icon-planning.svg"
+                          alt="" aria-hidden="true"><span>Planning</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative mt-4">
+                  <div class="flex items-center gap-4">
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Company</button>
+                    <img src="./images/icon-arrow-down.svg" alt="icon arrow down">
+                  </div>
+                  <ul class="flex flex-col gap-2 pl-5 mt-4">
+                    <li><a href="./index.html"><span>History</span></a></li>
+                    <li><a href="./index.html"><span>Our Team</span></a></li>
+                    <li><a href="./index.html"><span>Blog</span></a></li>
+                  </ul>
+                </li>
+                <li class="mt-4"><a href="./index.html">Careers</a></li>
+                <li class="mt-4"><a href="./index.html">About</a></li>
+              </ul>
+              <ul class="flex flex-col text-center gap-3 mt-4">
+                <li class="w-full"><a href="./index.html">Login</a></li>
+                <li class="w-full"><a
+                    class="block leading-10 h-10 border-color-medium-gray border-2 border-solid rounded-lg w-full"
+                    href="./index.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <picture>
+          <source media="(max-width: 1023px)" srcset="./images/image-hero-mobile.png">
+          <source media="(min-width: 1024px)" srcset="./images/image-hero-desktop.png">
+          <img src="./images/image-hero-mobile.png" alt=" illustration of image hero">
+        </picture>
+      </div>
+      <div class="py-12 px-5 flex flex-col items-center">
+        <h1 class="text-3xl">Make remote work</h1>
+        <p class="my-7 text-center text-sm font-color-medium-gray">Get your team in sync, no matter your location.
+          Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <a class="background-almost-black font-color-almost-white main-button h-12 flex justify-center items-center rounded-lg"
+          href="./index.html">Learn
+          more</a>
+      </div>
+    </section>
+    <footer class="px-5 pb-24">
+      <ul class="flex justify-between items-center gap-7">
+        <li><img class="w-full" src="./images/client-databiz.svg" alt="client databiz image"></li>
+        <li><img class="w-full" src="./images/client-audiophile.svg" alt="client audiophile image"></li>
+        <li><img class="w-full" src="./images/client-meet.svg" alt="client meet image"></li>
+        <li><img class="w-full" src="./images/client-maker.svg" alt="client maker image"></li>
+      </ul>
+    </footer>
+  </main>
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>

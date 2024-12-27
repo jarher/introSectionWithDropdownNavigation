@@ -2,6 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Epilogue-regular";
+  src: url("./fonts/static/Epilogue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Epilogue-medium";
+  src: url("./fonts/static/Epilogue-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Epilogue-bold";
+  src: url("./fonts/static/Epilogue-Bold.ttf");
+}
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
 html {
   font-size: 18px;
+  font-family: "Epilogue-regular";
+}
+
+h1 {
+  font-family: "Epilogue-bold";
+}
+
+.background-almost-white {
+  background-color: var(--Almost-White);
+}
+
+.background-almost-black {
+  background-color: var(--Almost-Black);
+}
+
+.background-almost-black-opacity-8 {
+  background-color: hsla(0, 0%, 8%, 0.8);
+}
+
+.border-color-medium-gray {
+  border-color: var(--Medium-Gray);
+}
+
+.font-color-almost-white {
+  color: var(--Almost-White);
+}
+
+.font-color-medium-gray {
+  color: var(--Medium-Gray);
+}
+
+.main-button {
+  width: 7.5rem;
+}
+
+#menu-content {
+  transform: translateX(100%);
 }

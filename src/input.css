@@ -62,3 +62,8 @@ h1 {
 #menu-content {
   transform: translateX(100%);
 }
+
+#features + ul,
+#company + ul {
+  max-height: 0;
+}

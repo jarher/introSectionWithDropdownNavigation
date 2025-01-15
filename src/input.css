@@ -57,13 +57,66 @@ h1 {
 
 .main-button {
   width: 7.5rem;
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  transition: all 0.3s ease-in-out;
 }
 
+.main-button:hover {
+  background-color: var(--Almost-White);
+  color: var(--Almost-Black);
+  border: 1px solid var(--Medium-Gray);
+  font-weight: 700;
+}
+
+.main-links {
+  transition: all 0.3s ease-in-out;
+}
+
+.main-links:hover {
+  color: var(--Almost-Black);
+}
+
+.register-link:hover {
+  border: 2px solid var(--Almost-Black);
+}
 #menu-content {
   transform: translateX(100%);
 }
 
 #features + ul,
 #company + ul {
-  max-height: 0;
+  height: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #features + ul,
+  #company + ul {
+    height: fit-content;
+  }
+
+  #menu-content {
+    transform: translateX(0);
+  }
+
+  section div:nth-child(1) {
+    width: 26.8rem;
+  }
+
+  section div:nth-child(2) {
+    width: 28.3rem;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, -2.7231rem + 8.6923vw, 4.2rem) !important;
+    /* padding-right: 4.1rem;s */
+  }
+
+  p {
+    font-size: 1.1rem !important;
+  }
+
+  .main-button {
+    width: 9.5rem;
+  }
 }
